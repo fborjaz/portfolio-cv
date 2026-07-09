@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, Folder } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -101,18 +102,29 @@ export default function Projects() {
               >
                 {/* Project Image */}
                 <div className="relative h-40 sm:h-44 md:h-48 bg-gradient-to-br from-primary/10 to-secondary/10 overflow-hidden">
-                  {/* Placeholder pattern */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <motion.div
-                      animate={{
-                        rotate: hoveredId === project.id ? 360 : 0,
-                        scale: hoveredId === project.id ? 1.2 : 1,
-                      }}
-                      transition={{ duration: 0.5 }}
-                    >
-                      <Folder className="w-12 h-12 md:w-16 md:h-16 text-primary/30" />
-                    </motion.div>
-                  </div>
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      unoptimized
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    /* Placeholder pattern */
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <motion.div
+                        animate={{
+                          rotate: hoveredId === project.id ? 360 : 0,
+                          scale: hoveredId === project.id ? 1.2 : 1,
+                        }}
+                        transition={{ duration: 0.5 }}
+                      >
+                        <Folder className="w-12 h-12 md:w-16 md:h-16 text-primary/30" />
+                      </motion.div>
+                    </div>
+                  )}
 
                   {/* Overlay on hover */}
                   <motion.div

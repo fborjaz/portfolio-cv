@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OmniPOS Desktop — Contable.Net">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#4338ca"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.18" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1080" cy="540" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <g transform="translate(96,150)">
+    <rect width="150" height="150" rx="36" fill="#ffffff" fill-opacity="0.14"/>
+    <g transform="translate(75,75)" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="-40" y="-32" width="80" height="56" rx="6"/>
+      <path d="M-16 24 v14 M16 24 v14 M-28 38 h56"/>
+    </g>
+  </g>
+  <text x="96" y="432" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="#ffffff">OmniPOS Desktop</text>
+  <text x="98" y="486" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="#ffffff" fill-opacity="0.88">.NET · WinForms · SQL Server</text>
+  <text x="98" y="562" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff" fill-opacity="0.7">github.com/fborjaz/OmniPOS-Desktop</text>
+</svg>

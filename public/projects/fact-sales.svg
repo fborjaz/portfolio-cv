@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sistema de Gestion de Ventas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.18" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2.2" fill="#ffffff" fill-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1080" cy="540" r="220" fill="#ffffff" fill-opacity="0.05"/>
+  <g transform="translate(96,150)">
+    <rect width="150" height="150" rx="36" fill="#ffffff" fill-opacity="0.14"/>
+    <g transform="translate(75,75)" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-28 -36 h56 v72 l-9 -8 -9 8 -9 -8 -9 8 -11 -8 z"/>
+      <path d="M-14 -16 h28 M-14 0 h28 M-14 16 h16"/>
+    </g>
+  </g>
+  <text x="96" y="432" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="62" font-weight="800" fill="#ffffff">Gestión de Ventas</text>
+  <text x="98" y="486" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="#ffffff" fill-opacity="0.88">Django · Facturas · Tailwind</text>
+  <text x="98" y="562" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff" fill-opacity="0.7">github.com/fborjaz/System_Fact_Sales_DJ</text>
+</svg>
