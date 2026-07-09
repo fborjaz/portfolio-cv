@@ -4,27 +4,25 @@
       <stop offset="0" stop-color="#7c3aed"/>
       <stop offset="1" stop-color="#db2777"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.78" cy="0.18" r="0.7">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.26"/>
+    <radialGradient id="glow" cx="0.7" cy="0.25" r="0.8">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.2"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse">
+    <pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse">
       <circle cx="3" cy="3" r="2.2" fill="#ffffff" fill-opacity="0.08"/>
     </pattern>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#dots)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <circle cx="1080" cy="540" r="220" fill="#ffffff" fill-opacity="0.05"/>
-  <g transform="translate(96,150)">
-    <rect width="150" height="150" rx="36" fill="#ffffff" fill-opacity="0.14"/>
-    <g transform="translate(75,75)" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="-36" y="-26" width="72" height="60" rx="8"/>
-      <path d="M-36 -8 h72 M-18 -26 v-12 M18 -26 v-12"/>
-      <path d="M-20 8 h10 M-2 8 h10 M16 8 h10 M-20 22 h10 M-2 22 h10"/>
-    </g>
+  <circle cx="1050" cy="120" r="160" fill="#ffffff" fill-opacity="0.06"/>
+  <circle cx="150" cy="560" r="180" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="600" cy="315" r="250" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2"/>
+  <circle cx="600" cy="315" r="190" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="2"/>
+  <rect x="490" y="205" width="220" height="220" rx="52" fill="#ffffff" fill-opacity="0.13" stroke="#ffffff" stroke-opacity="0.16" stroke-width="2"/>
+  <g transform="translate(600,315)" stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-48" y="-38" width="96" height="82" rx="10"/>
+    <path d="M-48 -12 h96 M-24 -38 v-16 M24 -38 v-16"/>
+    <path d="M-28 8 h14 M-2 8 h14 M22 8 h14 M-28 26 h14 M-2 26 h14"/>
   </g>
-  <text x="96" y="432" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="62" font-weight="800" fill="#ffffff">Gestión de Eventos</text>
-  <text x="98" y="486" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="#ffffff" fill-opacity="0.88">Django · Python · PostgreSQL</text>
-  <text x="98" y="562" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff" fill-opacity="0.7">github.com/fborjaz/Proy_System_Event</text>
 </svg>
