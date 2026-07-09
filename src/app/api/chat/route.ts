@@ -55,8 +55,8 @@ function buildFallbackResponses(language: "es" | "en"): Record<string, string> {
 
    if (language === "en") {
       return {
-         experiencia: "I have experience as a Full Stack Developer working on freelance projects since 2022. I also completed an IT support internship at M. Boderos. I've worked with React, Python, and modern web technologies. 💼",
-         habilidades: "I master technologies like React (90%), TypeScript (85%), Python (85%), and have experience with JavaScript, CSS, Tailwind and Next.js. I'm always learning new technologies! 🚀",
+         experiencia: "I have 3+ years as a Full-Stack Developer. I'm the founder of GoByTel, a proprietary ERP currently in production, and I also work freelance building web and mobile apps for international clients. My core stack is Django/Python and React/Next.js, and I integrate AI into my workflow. 💼",
+         habilidades: "My core stack is Python/Django and React/Next.js with TypeScript. I also work with FastAPI, Node.js, PostgreSQL, Docker, AWS and REST/GraphQL APIs (JWT/OAuth2). Always learning new tech! 🚀",
          proyectos: `I've developed several projects using React, Next.js and Python. You can see my projects on my GitHub: ${githubShort} 📂`,
          disponible: `Yes! I'm currently open to new job opportunities, both freelance projects and full-time positions. You can contact me at: ${email} 📧`,
          contacto: `You can reach me by email at ${email}, by phone at ${phone}, or through LinkedIn. I'd love to discuss your project! 📬`,
@@ -65,8 +65,8 @@ function buildFallbackResponses(language: "es" | "en"): Record<string, string> {
    }
 
    return {
-      experiencia: "Tengo experiencia como desarrollador Full Stack trabajando en proyectos freelance desde 2022. También realicé una pasantía en soporte IT en M. Boderos. He trabajado con React, Python, y tecnologías web modernas. 💼",
-      habilidades: "Domino tecnologías como React (90%), TypeScript (85%), Python (85%), y tengo experiencia con JavaScript, CSS, Tailwind y Next.js. ¡Siempre estoy aprendiendo nuevas tecnologías! 🚀",
+      experiencia: "Tengo más de 3 años como desarrollador Full-Stack. Soy fundador de GoByTel, un ERP propio actualmente en producción, y también trabajo freelance creando apps web y móviles para clientes internacionales. Mi stack principal es Django/Python y React/Next.js, e integro IA en mi flujo de trabajo. 💼",
+      habilidades: "Mi stack principal es Python/Django y React/Next.js con TypeScript. También trabajo con FastAPI, Node.js, PostgreSQL, Docker, AWS y APIs REST/GraphQL (JWT/OAuth2). ¡Siempre aprendiendo! 🚀",
       proyectos: `He desarrollado varios proyectos usando React, Next.js y Python. Puedes ver mis proyectos en mi GitHub: ${githubShort} 📂`,
       disponible: `¡Sí! Actualmente estoy abierto a nuevas oportunidades laborales, tanto proyectos freelance como posiciones de tiempo completo. Puedes contactarme por email: ${email} 📧`,
       contacto: `Puedes contactarme por email a ${email}, por teléfono al ${phone}, o a través de LinkedIn. ¡Estaré encantado de hablar sobre tu proyecto! 📬`,

@@ -176,7 +176,7 @@ export default function Hero() {
             {t('hero.viewProjects')}
           </motion.a>
           <motion.a
-            href="/documents/CV_Frank_Borja.pdf"
+            href="/documents/CV_Frank_Borja_.pdf"
             download
             whileHover={{
               scale: 1.05,
