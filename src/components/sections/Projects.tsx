@@ -22,6 +22,56 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 type FilterType = "all" | "featured";
 type Project = ReturnType<typeof getResumeData>["projects"][number];
 
+// Portada consciente del tema: usa la imagen clara u oscura según la clase `dark`
+// del sitio (toggle por CSS, sin flash). Los SVG usan la misma en ambos temas.
+function Cover({
+  light,
+  dark,
+  alt,
+  sizes,
+  className = "",
+}: {
+  light: string;
+  dark: string;
+  alt: string;
+  sizes: string;
+  className?: string;
+}) {
+  if (light === dark) {
+    return (
+      <Image
+        src={light}
+        alt={alt}
+        fill
+        sizes={sizes}
+        unoptimized={light.endsWith(".svg")}
+        className={className}
+      />
+    );
+  }
+  return (
+    <>
+      <Image
+        src={light}
+        alt={alt}
+        fill
+        sizes={sizes}
+        unoptimized={light.endsWith(".svg")}
+        className={`${className} block dark:hidden`}
+      />
+      <Image
+        src={dark}
+        alt=""
+        aria-hidden
+        fill
+        sizes={sizes}
+        unoptimized={dark.endsWith(".svg")}
+        className={`${className} hidden dark:block`}
+      />
+    </>
+  );
+}
+
 export default function Projects() {
   const { language, t } = useLanguage();
   const resumeData = getResumeData(language);
@@ -199,11 +249,10 @@ export default function Projects() {
                 className="relative block w-full aspect-[16/10] overflow-hidden
                            bg-gradient-to-br from-primary/10 to-secondary/10 text-left"
               >
-                <Image
-                  src={project.image}
+                <Cover
+                  light={project.image}
+                  dark={project.imageDark}
                   alt={project.title}
-                  fill
-                  unoptimized
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
                 />
@@ -315,11 +364,10 @@ export default function Projects() {
           >
             {/* Cover */}
             <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
-              <Image
-                src={selectedProject.image}
+              <Cover
+                light={selectedProject.image}
+                dark={selectedProject.imageDark}
                 alt={selectedProject.title}
-                fill
-                unoptimized
                 sizes="(max-width: 768px) 100vw, 672px"
                 className="modal-cover-img object-cover"
               />
